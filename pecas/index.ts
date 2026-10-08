@@ -15,6 +15,7 @@ import { Composicoes as p202610PrevisaoFimDeSemana } from './2026-10-previsao-fi
 import { Composicoes as p202610PrevisaoSemanaEleicao } from './2026-10-previsao-semana-eleicao/composicoes';
 import { Composicoes as p202610SaquaremaCinematico } from './2026-10-saquarema-cinematico/composicoes';
 import { Composicoes as p202610TributoAndy } from './2026-10-tributo-andy/composicoes';
+import { Composicoes as p202610CoisasQueSoQuemSurfaEntende } from './2026-10-coisas-que-so-quem-surfa-entende/composicoes';
 // novo:imports
 
 export const PECAS: { slug: string; Composicoes: ComponentType }[] = [
@@ -28,5 +29,6 @@ export const PECAS: { slug: string; Composicoes: ComponentType }[] = [
   { slug: '2026-10-previsao-semana-eleicao', Composicoes: p202610PrevisaoSemanaEleicao },
   { slug: '2026-10-saquarema-cinematico', Composicoes: p202610SaquaremaCinematico },
   { slug: '2026-10-tributo-andy', Composicoes: p202610TributoAndy },
+  { slug: '2026-10-coisas-que-so-quem-surfa-entende', Composicoes: p202610CoisasQueSoQuemSurfaEntende },
   // novo:pecas
 ];
