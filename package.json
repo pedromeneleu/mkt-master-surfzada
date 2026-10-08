@@ -21,6 +21,7 @@
     "tipos": "tsc --noEmit",
     "sfx": "tsx scripts/sfx.ts",
     "musica": "tsx scripts/musica.ts",
+    "marca": "tsx scripts/marca.ts",
     "andy:sprites": "tsx scripts/andy/sprites.ts",
     "andy:gif": "tsx scripts/andy/gif-bad-boy.ts"
   },

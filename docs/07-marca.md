@@ -35,6 +35,11 @@ Regra: **um** coral por tela. O resto é tinta, cinza e fundo.
 animável com `em`). Nunca use PNG do logo nem redesenhe. Em fundo escuro: `cor="#fff"`. O logo
 fecha o vídeo ou fica discreto no rodapé; não precisa aparecer o tempo todo.
 
+Fora do Remotion (site, apresentações, gráfica, Canva): `npm run marca` gera em `out/marca/` a folha
+de referência (`surfzada-marca-folha.png`: variações do logo, cores com hex e uso, tipografia) e cada
+variação em PNG transparente (`logos/surfzada-logo-{horizontal,vertical,simbolo,nome}-{tinta,branco}.png`),
+tudo a partir dos componentes acima. No Studio: pasta `marca`.
+
 ## Movimento
 
 - Curvas: `CHEGADA` (entradas, desacelera no fim), `SUAVE` (câmera), `SAIDA` (saídas).
