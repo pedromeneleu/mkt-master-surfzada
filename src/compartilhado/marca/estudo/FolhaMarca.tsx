@@ -9,7 +9,7 @@ import { Logo, Simbolo, Wordmark } from '../Marca';
  * as cores com o hex e o uso, e a tipografia. Tudo sai dos componentes e do tema, então
  * a folha acompanha qualquer mudança neles. Ver docs/07-marca.md.
  */
-export const FOLHA_MARCA = { largura: 2400, altura: 4160 };
+export const FOLHA_MARCA = { largura: 2400, altura: 4800 };
 
 /** O símbolo anima a partir de `em`; num quadro parado ele tem que estar inteiro. */
 const PRONTO = -100;
@@ -26,11 +26,18 @@ const FUNDOS: Fundo[] = [
   { nome: 'Tinta (fundo escuro)', fundo: COR.tinta, cor: '#fff' },
 ];
 
+/** Onde a versão de uma cor só resolve: inclusive sobre o coral, que apagaria o sol. */
+const FUNDOS_MONO: Fundo[] = [
+  { nome: 'Fundo claro', fundo: COR.fundo, cor: COR.tinta },
+  { nome: 'Tinta (fundo escuro)', fundo: COR.tinta, cor: '#fff' },
+  { nome: 'Coral', fundo: COR.coral, cor: '#fff' },
+];
+
 /** Logo empilhado: símbolo em cima e nome embaixo, na proporção do encerramento do trailer. */
-export function LogoVertical({ largura, cor }: { largura: number; cor: string }) {
+export function LogoVertical({ largura, cor, corSol }: { largura: number; cor: string; corSol?: string }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: largura * 0.09 }}>
-      <Simbolo largura={largura} em={PRONTO} cor={cor} />
+      <Simbolo largura={largura} em={PRONTO} cor={cor} corSol={corSol} />
       <Wordmark tamanho={largura * 0.4} cor={cor} />
     </div>
   );
@@ -48,10 +55,20 @@ function Secao({ titulo, nota, children }: { titulo: string; nota?: string; chil
   );
 }
 
-function Linha({ altura, desenho, partes = 'onda e nome' }: { altura: number; desenho: (cor: string) => ReactNode; partes?: string }) {
+function Linha({
+  altura,
+  desenho,
+  partes = 'onda e nome',
+  fundos = FUNDOS,
+}: {
+  altura: number;
+  desenho: (cor: string) => ReactNode;
+  partes?: string;
+  fundos?: Fundo[];
+}) {
   return (
     <div style={{ display: 'flex', gap: VAO }}>
-      {FUNDOS.map((f) => (
+      {fundos.map((f) => (
         <div key={f.nome} style={{ width: LARGURA_CELULA }}>
           <div
             style={{
@@ -126,11 +143,20 @@ export function FolhaMarca() {
         <Linha altura={220} desenho={(cor) => <Wordmark tamanho={110} cor={cor} />} partes="nome" />
       </Secao>
 
+      <Secao titulo="Monocromática" nota="uma cor só: bordado, carimbo, gravação, silk, sobre foto ou sobre o coral">
+        <Linha
+          altura={340}
+          desenho={(cor) => <Logo tamanho={92} em={PRONTO} cor={cor} corSol={cor} />}
+          partes="tudo"
+          fundos={FUNDOS_MONO}
+        />
+      </Secao>
+
       <Secao titulo="Cores">
         <Amostras
           titulo="Do logo"
           itens={[
-            { token: 'coral', cor: COR.coral, uso: 'sol e anel do símbolo, sempre; o destaque das peças' },
+            { token: 'coral', cor: COR.coral, uso: 'sol e anel do símbolo (fora da versão mono); o destaque das peças' },
             { token: 'tinta', cor: COR.tinta, uso: 'onda e nome sobre fundo claro' },
             { token: 'branco', cor: '#ffffff', uso: 'onda e nome sobre fundo escuro' },
           ]}
@@ -163,7 +189,7 @@ export function FolhaMarca() {
           alta 600 com traço coral.
         </div>
         <div style={{ flex: 1 }}>
-          <b style={{ color: COR.tinta }}>Regras:</b> o sol e o anel são sempre coral; em fundo escuro, onda e nome brancos. Um coral
+          <b style={{ color: COR.tinta }}>Regras:</b> o sol e o anel são coral (só a versão monocromática usa uma cor só); em fundo escuro, onda e nome brancos. Um coral
           por tela. Não distorça nem redesenhe: nos vídeos, use <i>Logo</i>, <i>Simbolo</i> e <i>Wordmark</i> de @compartilhado/marca.
         </div>
       </div>

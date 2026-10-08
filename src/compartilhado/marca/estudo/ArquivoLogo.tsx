@@ -12,6 +12,8 @@ export type PropsArquivoLogo = {
   variante: 'horizontal' | 'vertical' | 'simbolo' | 'nome';
   /** Cor da onda e do nome: tinta (fundo claro) ou branco (fundo escuro). */
   cor: 'tinta' | 'branco';
+  /** Monocromático: sol e anel na mesma cor da onda (bordado, carimbo, gravação, uma cor só). */
+  mono?: boolean;
 };
 
 const PRONTO = -100;
@@ -26,13 +28,14 @@ const TELAS: Record<PropsArquivoLogo['variante'], { width: number; height: numbe
 
 export const metadadosArquivoLogo: CalculateMetadataFunction<PropsArquivoLogo> = ({ props }) => TELAS[props.variante];
 
-export function ArquivoLogo({ variante, cor }: PropsArquivoLogo) {
+export function ArquivoLogo({ variante, cor, mono = false }: PropsArquivoLogo) {
   const c = cor === 'tinta' ? COR.tinta : '#fff';
+  const corSol = mono ? c : undefined;
   return (
     <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
-      {variante === 'horizontal' && <Logo tamanho={200} em={PRONTO} cor={c} />}
-      {variante === 'vertical' && <LogoVertical largura={700} cor={c} />}
-      {variante === 'simbolo' && <Simbolo largura={1000} em={PRONTO} cor={c} />}
+      {variante === 'horizontal' && <Logo tamanho={200} em={PRONTO} cor={c} corSol={corSol} />}
+      {variante === 'vertical' && <LogoVertical largura={700} cor={c} corSol={corSol} />}
+      {variante === 'simbolo' && <Simbolo largura={1000} em={PRONTO} cor={c} corSol={corSol} />}
       {variante === 'nome' && <Wordmark tamanho={260} cor={c} />}
     </AbsoluteFill>
   );

@@ -4,7 +4,7 @@
  * usar fora do Remotion (site, apresentações, gráfica, Canva).
  *
  * Uso: npm run marca
- * Saída: out/marca/surfzada-marca-folha.png e out/marca/logos/surfzada-logo-<variante>-<cor>.png
+ * Saída: out/marca/surfzada-marca-folha.png e out/marca/logos/surfzada-logo-<variante>-<cor>[-mono].png
  */
 import { mkdirSync } from 'node:fs';
 import { join } from 'node:path';
@@ -25,13 +25,16 @@ const folha = await selectComposition({ serveUrl, id: 'marca-folha' });
 await renderStill({ serveUrl, composition: folha, output: join(SAIDA, 'surfzada-marca-folha.png'), imageFormat: 'png' });
 console.log('  surfzada-marca-folha.png');
 
-for (const variante of VARIANTES) {
-  for (const cor of CORES) {
-    const inputProps: PropsArquivoLogo = { variante, cor };
-    const composition = await selectComposition({ serveUrl, id: 'marca-logo', inputProps });
-    const nome = `surfzada-logo-${variante}-${cor}.png`;
-    await renderStill({ serveUrl, composition, inputProps, output: join(SAIDA, 'logos', nome), imageFormat: 'png' });
-    console.log(`  logos/${nome}`);
-  }
+// O nome sozinho já é de uma cor só: não tem versão mono.
+const pedidos: PropsArquivoLogo[] = VARIANTES.flatMap((variante) =>
+  CORES.flatMap((cor) => [{ variante, cor }, ...(variante === 'nome' ? [] : [{ variante, cor, mono: true }])]),
+);
+
+for (const inputProps of pedidos) {
+  const { variante, cor, mono } = inputProps;
+  const composition = await selectComposition({ serveUrl, id: 'marca-logo', inputProps });
+  const nome = `surfzada-logo-${variante}-${cor}${mono ? '-mono' : ''}.png`;
+  await renderStill({ serveUrl, composition, inputProps, output: join(SAIDA, 'logos', nome), imageFormat: 'png' });
+  console.log(`  logos/${nome}`);
 }
 console.log(`Pronto: ${SAIDA}`);

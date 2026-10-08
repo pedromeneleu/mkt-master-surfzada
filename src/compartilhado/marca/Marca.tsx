@@ -46,8 +46,9 @@ const RECORTE_SOL = 'M600 0 H1300 V625 L1045 625 Q900 478 735 478 L600 478 Z';
 /**
  * Símbolo da surfzada (sol + onda) com animação de desenho: o anel se traça,
  * o sol nasce e a onda passa da esquerda para a direita. `em` = início.
+ * `corSol` só muda na versão monocromática (sol e anel na mesma cor da onda).
  */
-export function Simbolo({ largura, em = 0, cor = COR.tinta }: { largura: number; em?: number; cor?: string }) {
+export function Simbolo({ largura, em = 0, cor = COR.tinta, corSol = COR.coral }: { largura: number; em?: number; cor?: string; corSol?: string }) {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const anel = interpolate(frame, [em, em + 22], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: CHEGADA });
@@ -64,9 +65,9 @@ export function Simbolo({ largura, em = 0, cor = COR.tinta }: { largura: number;
           <rect x={-20} y={0} width={1860 * onda} height={1003} />
         </clipPath>
       </defs>
-      <path d={ANEL} fill="none" stroke={COR.coral} strokeWidth={105} pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - anel} />
+      <path d={ANEL} fill="none" stroke={corSol} strokeWidth={105} pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - anel} />
       <g clipPath={`url(#${id})`}>
-        <circle cx={942} cy={445} r={205 * sol} fill={COR.coral} />
+        <circle cx={942} cy={445} r={205 * sol} fill={corSol} />
       </g>
       <path d={ONDA} fill={cor} clipPath={`url(#${id}-onda)`} />
     </svg>
@@ -84,13 +85,13 @@ export function Wordmark({ tamanho, cor = COR.tinta }: { tamanho: number; cor?: 
 }
 
 /** Símbolo + wordmark lado a lado, entrando juntos. */
-export function Logo({ tamanho, em = 0, cor = COR.tinta }: { tamanho: number; em?: number; cor?: string }) {
+export function Logo({ tamanho, em = 0, cor = COR.tinta, corSol }: { tamanho: number; em?: number; cor?: string; corSol?: string }) {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const texto = spring({ frame: frame - em - 10, fps, config: { damping: 200 } });
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: tamanho * 0.28 }}>
-      <Simbolo largura={tamanho * 1.9} em={em} cor={cor} />
+      <Simbolo largura={tamanho * 1.9} em={em} cor={cor} corSol={corSol} />
       <div style={{ opacity: texto, transform: `translateX(${(1 - texto) * -24}px)`, clipPath: `inset(0 ${(1 - texto) * 100}% 0 0)` }}>
         <Wordmark tamanho={tamanho} cor={cor} />
       </div>
