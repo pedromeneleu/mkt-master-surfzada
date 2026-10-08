@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run pecas:*)",
+      "Bash(npm run checar:*)",
+      "Bash(npm run tipos:*)",
+      "Bash(npm run quadros:*)",
+      "Bash(npm run render:*)",
+      "Bash(npm run carrossel:*)",
+      "Bash(npm run assets:*)",
+      "Bash(npm run dados:*)",
+      "Bash(npm run sfx:*)",
+      "Bash(npm run novo:*)",
+      "Bash(npm run musica:*)",
+      "Bash(npx tsc:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git switch:*)"
+    ],
+    "ask": ["Bash(npm run entregar:*)", "Bash(git push:*)"]
+  }
+}

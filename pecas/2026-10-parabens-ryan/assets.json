@@ -1,0 +1,9 @@
+{
+  "arquivos": [
+    {
+      "origem": "pecas/2026-10-parabens-ryan/fotos/*.jpg",
+      "destino": "fotos/",
+      "nota": "Fotos da WSL (Thiago Diz, Ana Catarina): direitos dos fotógrafos, não vão para o git. Fontes em creditos.json."
+    }
+  ]
+}

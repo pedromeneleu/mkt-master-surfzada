@@ -1,0 +1,46 @@
+{
+  "name": "surfzada-mkt",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Posts da Surfzada (stories, reels, carrosséis e vídeos) em Remotion: um projeto, modelos reutilizáveis e uma pasta por peça",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "novo": "tsx scripts/novo.ts",
+    "assets": "tsx scripts/assets.ts",
+    "dados": "tsx scripts/dados.ts",
+    "render": "tsx scripts/render.ts",
+    "quadros": "tsx scripts/quadros.ts",
+    "carrossel": "tsx scripts/carrossel.ts",
+    "entregar": "tsx scripts/entregar.ts",
+    "pecas": "tsx scripts/pecas.ts",
+    "checar": "tsc --noEmit && tsx scripts/checar.ts",
+    "tipos": "tsc --noEmit",
+    "sfx": "tsx scripts/sfx.ts",
+    "musica": "tsx scripts/musica.ts",
+    "andy:sprites": "tsx scripts/andy/sprites.ts",
+    "andy:gif": "tsx scripts/andy/gif-bad-boy.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.529",
+    "@remotion/google-fonts": "4.0.529",
+    "@remotion/transitions": "4.0.529",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.529",
+    "@remotion/renderer": "4.0.529",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.1.0",
+    "playwright": "1.63.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "yaml": "^2.8.0",
+    "zod": "^3.25.0"
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "geradoEm": "2026-10-01T14:14:15.223Z",
+  "janela": "6h–11h",
+  "picos": [
+    {
+      "uf": "CE",
+      "nome": "Praia do Futuro",
+      "cidade": "Fortaleza",
+      "dias": [
+        {
+          "data": "2026-10-02",
+          "sigla": "SEX",
+          "nome": "Sexta",
+          "altura": 1.22,
+          "alturaSwell": 0.96,
+          "periodo": 4.4,
+          "swellDirecao": 65,
+          "swellCardeal": "NE",
+          "ventoKn": 8.7,
+          "ventoDirecao": 85,
+          "ventoCardeal": "E",
+          "tipoVento": "maral",
+          "potencia": 3.2
+        },
+        {
+          "data": "2026-10-03",
+          "sigla": "SÁB",
+          "nome": "Sábado",
+          "altura": 1.16,
+          "alturaSwell": 0.84,
+          "periodo": 4.5,
+          "swellDirecao": 68,
+          "swellCardeal": "E",
+          "ventoKn": 11.1,
+          "ventoDirecao": 100,
+          "ventoCardeal": "E",
+          "tipoVento": "maral",
+          "potencia": 2.9
+        },
+        {
+          "data": "2026-10-04",
+          "sigla": "DOM",
+          "nome": "Domingo",
+          "altura": 1.41,
+          "alturaSwell": 0.76,
+          "periodo": 5.2,
+          "swellDirecao": 63,
+          "swellCardeal": "NE",
+          "ventoKn": 12.4,
+          "ventoDirecao": 107,
+          "ventoCardeal": "E",
+          "tipoVento": "maral",
+          "potencia": 5
+        }
+      ],
+      "melhorDia": 2
+    },
+    {
+      "uf": "RN",
+      "nome": "Baía Formosa",
+      "cidade": "Litoral sul do RN",
+      "dias": [
+        {
+          "data": "2026-10-02",
+          "sigla": "SEX",
+          "nome": "Sexta",
+          "altura": 1.14,
+          "alturaSwell": 0.97,
+          "periodo": 4.8,
+          "swellDirecao": 92,
+          "swellCardeal": "E",
+          "ventoKn": 7.6,
+          "ventoDirecao": 94,
+          "ventoCardeal": "E",
+          "tipoVento": "cruzado",
+          "potencia": 3.1
+        },
+        {
+          "data": "2026-10-03",
+          "sigla": "SÁB",
+          "nome": "Sábado",
+          "altura": 1.06,
+          "alturaSwell": 0.78,
+          "periodo": 5.3,
+          "swellDirecao": 87,
+          "swellCardeal": "E",
+          "ventoKn": 8.9,
+          "ventoDirecao": 91,
+          "ventoCardeal": "E",
+          "tipoVento": "cruzado",
+          "potencia": 2.9
+        },
+        {
+          "data": "2026-10-04",
+          "sigla": "DOM",
+          "nome": "Domingo",
+          "altura": 1.6,
+          "alturaSwell": 0.95,
+          "periodo": 5.4,
+          "swellDirecao": 75,
+          "swellCardeal": "E",
+          "ventoKn": 10.4,
+          "ventoDirecao": 125,
+          "ventoCardeal": "SE",
+          "tipoVento": "cruzado",
+          "potencia": 6.8
+        }
+      ],
+      "melhorDia": 2
+    },
+    {
+      "uf": "ES",
+      "nome": "Regência",
+      "cidade": "Linhares",
+      "dias": [
+        {
+          "data": "2026-10-02",
+          "sigla": "SEX",
+          "nome": "Sexta",
+          "altura": 0.93,
+          "alturaSwell": 0.69,
+          "periodo": 5.2,
+          "swellDirecao": 75,
+          "swellCardeal": "E",
+          "ventoKn": 4.2,
+          "ventoDirecao": 88,
+          "ventoCardeal": "E",
+          "tipoVento": "fraco",
+          "potencia": 2.2
+        },
+        {
+          "data": "2026-10-03",
+          "sigla": "SÁB",
+          "nome": "Sábado",
+          "altura": 0.93,
+          "alturaSwell": 0.55,
+          "periodo": 7,
+          "swellDirecao": 165,
+          "swellCardeal": "S",
+          "ventoKn": 7.1,
+          "ventoDirecao": 37,
+          "ventoCardeal": "NE",
+          "tipoVento": "cruzado",
+          "potencia": 2.9
+        },
+        {
+          "data": "2026-10-04",
+          "sigla": "DOM",
+          "nome": "Domingo",
+          "altura": 1.26,
+          "alturaSwell": 0.76,
+          "periodo": 7,
+          "swellDirecao": 147,
+          "swellCardeal": "SE",
+          "ventoKn": 10.2,
+          "ventoDirecao": 30,
+          "ventoCardeal": "NE",
+          "tipoVento": "cruzado",
+          "potencia": 5.4
+        }
+      ],
+      "melhorDia": 2
+    },
+    {
+      "uf": "RJ",
+      "nome": "Arpoador",
+      "cidade": "Rio de Janeiro",
+      "dias": [
+        {
+          "data": "2026-10-02",
+          "sigla": "SEX",
+          "nome": "Sexta",
+          "altura": 1.23,
+          "alturaSwell": 0.87,
+          "periodo": 8.7,
+          "swellDirecao": 183,
+          "swellCardeal": "S",
+          "ventoKn": 3.6,
+          "ventoDirecao": 227,
+          "ventoCardeal": "SO",
+          "tipoVento": "fraco",
+          "potencia": 6.4
+        },
+        {
+          "data": "2026-10-03",
+          "sigla": "SÁB",
+          "nome": "Sábado",
+          "altura": 1.87,
+          "alturaSwell": 1.63,
+          "periodo": 7.6,
+          "swellDirecao": 186,
+          "swellCardeal": "S",
+          "ventoKn": 6.9,
+          "ventoDirecao": 94,
+          "ventoCardeal": "E",
+          "tipoVento": "cruzado",
+          "potencia": 13
+        },
+        {
+          "data": "2026-10-04",
+          "sigla": "DOM",
+          "nome": "Domingo",
+          "altura": 1.54,
+          "alturaSwell": 1.07,
+          "periodo": 7.5,
+          "swellDirecao": 155,
+          "swellCardeal": "SE",
+          "ventoKn": 1.5,
+          "ventoDirecao": 55,
+          "ventoCardeal": "NE",
+          "tipoVento": "fraco",
+          "potencia": 8.7
+        }
+      ],
+      "melhorDia": 1
+    },
+    {
+      "uf": "SP",
+      "nome": "Maresias",
+      "cidade": "São Sebastião",
+      "dias": [
+        {
+          "data": "2026-10-02",
+          "sigla": "SEX",
+          "nome": "Sexta",
+          "altura": 1.35,
+          "alturaSwell": 1.16,
+          "periodo": 6.8,
+          "swellDirecao": 191,
+          "swellCardeal": "S",
+          "ventoKn": 6.1,
+          "ventoDirecao": 170,
+          "ventoCardeal": "S",
+          "tipoVento": "maral",
+          "potencia": 6.1
+        },
+        {
+          "data": "2026-10-03",
+          "sigla": "SÁB",
+          "nome": "Sábado",
+          "altura": 1.66,
+          "alturaSwell": 1.61,
+          "periodo": 7.6,
+          "swellDirecao": 179,
+          "swellCardeal": "S",
+          "ventoKn": 5.1,
+          "ventoDirecao": 57,
+          "ventoCardeal": "NE",
+          "tipoVento": "cruzado",
+          "potencia": 10.3
+        },
+        {
+          "data": "2026-10-04",
+          "sigla": "DOM",
+          "nome": "Domingo",
+          "altura": 1.13,
+          "alturaSwell": 0.91,
+          "periodo": 8.1,
+          "swellDirecao": 178,
+          "swellCardeal": "S",
+          "ventoKn": 3.3,
+          "ventoDirecao": 76,
+          "ventoCardeal": "E",
+          "tipoVento": "fraco",
+          "potencia": 5.1
+        }
+      ],
+      "melhorDia": 1
+    }
+  ]
+}

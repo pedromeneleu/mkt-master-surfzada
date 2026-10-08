@@ -1,0 +1,63 @@
+# O que vai para o git: código, dados pequenos (JSON), textos (post.md, docs)
+# e assets leves e redistribuíveis (até 2 MB, ver docs/08-licencas.md).
+# O resto (brutos, fotos com direitos, trilhas, renders) vive no Drive:
+# docs/04-assets-e-drive.md.
+
+# Dependências e saídas
+node_modules/
+out/
+*.tsbuildinfo
+.remotion/
+
+# public/ é montado por `npm run assets` e `npm run sfx`: nada dele é versionado.
+# A fonte dos arquivos leves de cada peça é pecas/<slug>/assets/.
+public/
+
+# Ambiente local
+.env
+.env.*
+!.env.exemplo
+
+# Vídeo e áudio
+*.[mM][pP]4
+*.[mM][oO][vV]
+*.[mM]4[vV]
+*.[wW][eE][bB][mM]
+*.[mM][kK][vV]
+*.[aA][vV][iI]
+*.[wW][aA][vV]
+*.[mM][pP]3
+*.[aA][aA][cC]
+*.[mM]4[aA]
+*.[fF][lL][aA][cC]
+
+# Arquivos de trabalho de design e 3D (ficam em $MKT_DRIVE/produtos)
+*.blend
+*.blend[0-9]
+*.blend@
+*.af
+*.afdesign
+*.afphoto
+*.psd
+*.ai
+*.kra
+
+# Pacotes
+*.zip
+*.rar
+*.7z
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.claude/settings.local.json
+.idea/
