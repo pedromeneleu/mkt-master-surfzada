@@ -9,6 +9,15 @@
       "origem": "pecas/2026-10-meme-one-shot/fundo-saquarema.mp4",
       "destino": "fundo-saquarema.mp4",
       "nota": "IMG_6577 (Saquarema, do morro) em SDR, cortado em 1,2–12,4 s"
+    },
+    {
+      "origem": "pecas/2026-10-meme-one-shot/pexels-13683526_2160_3840_25fps.mp4",
+      "destino": "fundo-surfista.mp4",
+      "converter": {
+        "orientacao": "vertical",
+        "hdr": false
+      },
+      "nota": "Pexels 13683526 (4K 25 fps, SDR): surfista numa direita, câmera acompanhando, 5,68 s sem cortes"
     }
   ]
 }

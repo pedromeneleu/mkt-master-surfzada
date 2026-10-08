@@ -15,12 +15,14 @@ export type PropsMeme = {
   texto: string;
   /** URL do vídeo de fundo (ex.: arquivo('fundo-ipanema.mp4')). */
   fundo: string;
+  /** Cor do logo do fim (padrão branco); use uma escura quando o fim do plano é espuma. */
+  corLogo?: string;
 };
 
 /** Duração em frames de um fundo de `segundos`. */
 export const duracaoMeme = (segundos: number) => Math.round(segundos * FPS);
 
-export function MemeOneShot({ texto, fundo }: PropsMeme) {
+export function MemeOneShot({ texto, fundo, corLogo = '#fff' }: PropsMeme) {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const marcaEm = durationInFrames - 42;
@@ -38,7 +40,7 @@ export function MemeOneShot({ texto, fundo }: PropsMeme) {
 
       <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'flex-end', paddingBottom: 470 }}>
         <div style={{ opacity: marca, filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.35))' }}>
-          <Logo tamanho={44} em={marcaEm} cor="#fff" />
+          <Logo tamanho={44} em={marcaEm} cor={corLogo} />
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

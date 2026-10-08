@@ -19,6 +19,10 @@ renders:
     arquivo: surfzada-meme-saquarema-trabalho-9x16.mp4
   - composicao: meme-saquarema-prova
     arquivo: surfzada-meme-saquarema-prova-9x16.mp4
+  - composicao: meme-surfista-trabalho
+    arquivo: surfzada-meme-surfista-trabalho-9x16.mp4
+  - composicao: meme-surfista-prova
+    arquivo: surfzada-meme-surfista-prova-9x16.mp4
   - composicao: meme-camada-texto-trabalho
     arquivo: surfzada-meme-camada-texto-trabalho.png
   - composicao: meme-camada-texto-prova
@@ -41,6 +45,10 @@ Fundos:
 - **Saquarema** (`IMG_6577.MOV`, Drive `Captações/SAQUAREMA-0626`): 4K 60 fps HDR, visto do morro
   com grama na frente, cortado de 1,2 s a 12,4 s. **Não reusar este clipe** em outras peças
   (já foi para o reels do meme).
+- **Surfista** (Pexels 13683526, Drive `pecas/2026-10-meme-one-shot/pexels-13683526_2160_3840_25fps.mp4`):
+  4K vertical, 25 fps, SDR, 5,68 s inteiros sem cortes. Surfista de prancha laranja numa direita,
+  a câmera acompanha a manobra e o plano termina na espuma; por isso o logo do fim sai escuro
+  (`COR.marFundo`), o branco sumia na espuma.
 
 ## Roteiro
 
@@ -67,7 +75,9 @@ A frase + "Previsão de surf grátis: Surfzada"
 
 ## Créditos
 
-Imagens próprias (João).
+Imagens próprias (João), exceto o fundo "surfista": vídeo 13683526 do Pexels
+(https://www.pexels.com/video/13683526/), Licença Pexels (uso livre, crédito recomendado).
+**Falta o nome do autor** — conferir na página do vídeo e completar aqui.
 
 ## Notas técnicas
 
@@ -82,5 +92,7 @@ estourar em tela HDR. Entregues: `surfzada-meme-mente-{trabalho,prova}-1080[-log
 ## Notas de revisão
 
 - Migrado de `mkt/videos/one-shot-ipanema` + `trailer/src/MemeOneShot.tsx` em 2026-10-05.
+- 2026-10-08: novo fundo "surfista" (Pexels) com as duas frases, render direto do Remotion
+  (o original já é SDR, não precisa da versão "vídeo original" com camada).
 - O comando ffmpeg exato da versão "vídeo original" não ficou registrado; ao refazer, documentar
   aqui.
