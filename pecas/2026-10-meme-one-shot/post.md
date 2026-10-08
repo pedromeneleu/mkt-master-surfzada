@@ -19,10 +19,8 @@ renders:
     arquivo: surfzada-meme-saquarema-trabalho-9x16.mp4
   - composicao: meme-saquarema-prova
     arquivo: surfzada-meme-saquarema-prova-9x16.mp4
-  - composicao: meme-surfista-trabalho
-    arquivo: surfzada-meme-surfista-trabalho-9x16.mp4
-  - composicao: meme-surfista-prova
-    arquivo: surfzada-meme-surfista-prova-9x16.mp4
+  - composicao: meme-surfista-depois
+    arquivo: surfzada-meme-surfista-depois-9x16.mp4
   - composicao: meme-camada-texto-trabalho
     arquivo: surfzada-meme-camada-texto-trabalho.png
   - composicao: meme-camada-texto-prova
@@ -60,6 +58,8 @@ Frases (em `composicoes.tsx`):
 
 - trabalho: "O que fica na minha mente quando tô no trabalho:"
 - prova: "O que fica na minha mente quando tô na semana de prova:"
+- surfista (só com o fundo "surfista"): "“Talvez depois”" + linha em branco + "E se não tiver
+  “depois”?"
 
 Outras frases pesquisadas (para as próximas): "Sexta, 7h45. Seu chefe acha que você tá no
 trânsito." · "Desculpa pelas coisas que eu disse quando tava flat." · "Amanhã alguém vai te falar
@@ -92,7 +92,7 @@ estourar em tela HDR. Entregues: `surfzada-meme-mente-{trabalho,prova}-1080[-log
 ## Notas de revisão
 
 - Migrado de `mkt/videos/one-shot-ipanema` + `trailer/src/MemeOneShot.tsx` em 2026-10-05.
-- 2026-10-08: novo fundo "surfista" (Pexels) com as duas frases, render direto do Remotion
+- 2026-10-08: novo fundo "surfista" (Pexels) com frase própria ("Talvez depois"), render direto do Remotion
   (o original já é SDR, não precisa da versão "vídeo original" com camada).
 - O comando ffmpeg exato da versão "vídeo original" não ficou registrado; ao refazer, documentar
   aqui.

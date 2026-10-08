@@ -12,15 +12,21 @@ const FRASES = {
   prova: 'O que fica na minha mente quando tô na semana de prova:',
 } as const;
 
-type Fundo = { arquivo: string; segundos: number; corLogo?: string };
-
-const FUNDOS: Record<'ipanema' | 'saquarema' | 'surfista', Fundo> = {
+const FUNDOS = {
   /** IMG_6440: Ipanema, sexta 7h45, 0–6,6 s. */
   ipanema: { arquivo: 'fundo-ipanema.mp4', segundos: 6.6 },
   /** IMG_6577: Saquarema visto do morro, 1,2–12,4 s (sem a descida inicial da câmera). */
   saquarema: { arquivo: 'fundo-saquarema.mp4', segundos: 11.2 },
-  /** Pexels 13683526: surfista numa direita, 5,68 s inteiros (25 fps). Termina na espuma: logo escuro. */
-  surfista: { arquivo: 'fundo-surfista.mp4', segundos: 5.68, corLogo: COR.marFundo },
+} as const;
+
+/**
+ * Pexels 13683526: surfista numa direita, 5,68 s inteiros (25 fps), com frase própria.
+ * O plano termina na espuma: logo escuro (o branco sumia).
+ */
+const SURFISTA = {
+  arquivo: 'fundo-surfista.mp4',
+  segundos: 5.68,
+  texto: '“Talvez depois”\n\nE se não tiver “depois”?',
 };
 
 /** Camadas 4K transparentes para o ffmpeg aplicar sobre o vídeo original em HDR (ver post.md). */
@@ -35,13 +41,21 @@ export function Composicoes() {
             key={`${fundo}-${frase}`}
             id={`meme-${fundo}-${frase}`}
             component={MemeOneShot}
-            defaultProps={{ texto: FRASES[frase], fundo: arquivo(FUNDOS[fundo].arquivo), corLogo: FUNDOS[fundo].corLogo }}
+            defaultProps={{ texto: FRASES[frase], fundo: arquivo(FUNDOS[fundo].arquivo) }}
             durationInFrames={duracaoMeme(FUNDOS[fundo].segundos)}
             fps={FPS}
             {...FORMATOS['reel-9x16']}
           />
         )),
       )}
+      <Composition
+        id="meme-surfista-depois"
+        component={MemeOneShot}
+        defaultProps={{ texto: SURFISTA.texto, fundo: arquivo(SURFISTA.arquivo), corLogo: COR.marFundo }}
+        durationInFrames={duracaoMeme(SURFISTA.segundos)}
+        fps={FPS}
+        {...FORMATOS['reel-9x16']}
+      />
       {(Object.keys(FRASES) as (keyof typeof FRASES)[]).map((frase) => (
         <Still key={frase} id={`meme-camada-texto-${frase}`} component={CamadaTextoMeme} defaultProps={{ texto: FRASES[frase] }} {...CAMADA} />
       ))}

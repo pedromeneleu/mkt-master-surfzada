@@ -11,7 +11,7 @@ import { CHEGADA, FONTE, FPS } from '@compartilhado/tema';
  * assets.json da peça). A peça passa a URL do fundo, a frase e a duração.
  */
 export type PropsMeme = {
-  /** Frase do topo, já no primeiro quadro (o gancho tem que estar lá antes do play). */
+  /** Frase do topo, já no primeiro quadro (o gancho tem que estar lá antes do play). Aceita \n. */
   texto: string;
   /** URL do vídeo de fundo (ex.: arquivo('fundo-ipanema.mp4')). */
   fundo: string;
@@ -61,6 +61,7 @@ function TextoMeme({ texto, escala = 1, cor = '#fff' }: { texto: string; escala?
           lineHeight: 1.22,
           color: cor,
           textAlign: 'center',
+          whiteSpace: 'pre-line',
           letterSpacing: -0.5 * escala,
           textShadow: `0 ${2 * escala}px ${3 * escala}px rgba(0,0,0,0.45), 0 0 ${26 * escala}px rgba(0,0,0,0.28)`,
         }}
