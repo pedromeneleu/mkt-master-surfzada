@@ -1,0 +1,24 @@
+{
+  "arquivos": [
+    {
+      "origem": "pecas/2026-09-explica-ep01/reais/r1-inicio.jpg",
+      "destino": "reais/r1-inicio.jpg",
+      "nota": "Quadro do Telo Island (Pexels, Luke Cromwell)"
+    },
+    {
+      "origem": "pecas/2026-09-explica-ep01/reais/r1-congelado.jpg",
+      "destino": "reais/r1-congelado.jpg",
+      "nota": "Crista congelada do Telo Island (gancho e carrossel)"
+    },
+    {
+      "origem": "pecas/2026-09-explica-ep01/reais/r1-telo-island.mp4",
+      "destino": "reais/r1-telo-island.mp4",
+      "nota": "Pexels, Luke Cromwell: https://www.pexels.com/video/surfer-riding-perfect-wave-at-telo-island-30127774/"
+    },
+    {
+      "origem": "pecas/2026-09-explica-ep01/reais/r2-swell-aereo-tomfisk.mp4",
+      "destino": "reais/r2-swell-aereo-tomfisk.mp4",
+      "nota": "Pexels, Tom Fisk (357 MB): https://www.pexels.com/video/captivating-aerial-view-of-ocean-waves-34716545/"
+    }
+  ]
+}

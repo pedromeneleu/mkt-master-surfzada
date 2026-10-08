@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Ondalogia · conceitos de mascote</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#0a0a0a; --coral:#ff7a59; --bg:#f5f5f5; --muted:#737373; }
+  * { box-sizing:border-box; margin:0; }
+  body { width:1600px; padding:56px; background:var(--bg); font-family:Poppins,sans-serif; color:var(--ink); }
+  h1 { font-size:40px; font-weight:700; letter-spacing:-.02em; }
+  h1 span { color:var(--coral); }
+  h2 { font-size:22px; font-weight:600; margin:40px 0 16px; }
+  p.sub { color:var(--muted); font-size:17px; margin-top:6px; }
+  .linha { display:flex; gap:20px; }
+  .card { background:#fff; border:1px solid #e5e5e5; border-radius:18px; padding:16px; flex:1; }
+  .card svg { width:100%; display:block; }
+  .card b { display:block; font-size:16px; margin-top:8px; }
+  .card small { color:var(--muted); font-size:13px; line-height:1.4; display:block; }
+  .alt .card { flex:0 0 360px; }
+  .paleta { display:flex; gap:10px; margin-top:8px; }
+  .paleta div { width:120px; height:64px; border-radius:12px; display:flex; align-items:flex-end; padding:8px; font-size:12px; font-weight:600; }
+</style>
+</head>
+<body>
+<h1>Ondalogia <span>·</span> mascote</h1>
+<p class="sub">Rascunhos para escolher a direção. A Boia é a recomendada: círculo coral sobre a onda preta, o mesmo desenho do logo.</p>
+
+<h2>A · Boia, a boia oceanográfica (recomendada)</h2>
+<div class="linha" id="boias"></div>
+
+<h2>Alternativas</h2>
+<div class="linha alt" id="alts"></div>
+
+<h2>Paleta das animações</h2>
+<div class="paleta">
+  <div style="background:#0a0a0a;color:#fff">tinta #0a0a0a</div>
+  <div style="background:#ff7a59">coral #ff7a59</div>
+  <div style="background:#ffb26b">sol #ffb26b</div>
+  <div style="background:#0a3d62;color:#fff">fundo #0a3d62</div>
+  <div style="background:#1e6091;color:#fff">mar #1e6091</div>
+  <div style="background:#0091d5;color:#fff">raso #0091d5</div>
+  <div style="background:#48cae4">água #48cae4</div>
+  <div style="background:#eaf9ff;border:1px solid #e5e5e5">espuma #eaf9ff</div>
+</div>
+
+<script>
+const INK = '#0a0a0a', CORAL = '#ff7a59';
+const onda = `<path d="M0 292 C70 250 130 250 200 282 S330 318 400 262 L400 400 L0 400 Z" fill="${INK}"/>`;
+
+function boia({ olhos, boca, antena = 'reta', extra = '' }) {
+  const antenas = {
+    reta: `<line x1="200" y1="112" x2="200" y2="46" stroke="${INK}" stroke-width="9" stroke-linecap="round"/>
+           <circle cx="200" cy="36" r="17" fill="none" stroke="${CORAL}" stroke-width="6"/><circle cx="200" cy="36" r="8" fill="${CORAL}"/>`,
+    aponta: `<path d="M200 112 Q205 70 250 52" stroke="${INK}" stroke-width="9" fill="none" stroke-linecap="round"/>
+           <circle cx="262" cy="46" r="17" fill="none" stroke="${CORAL}" stroke-width="6"/><circle cx="262" cy="46" r="8" fill="${CORAL}"/>
+           <path d="M290 30 l22 -10 M294 50 l24 2 M286 70 l18 12" stroke="${INK}" stroke-width="5" stroke-linecap="round"/>`,
+    ideia: `<line x1="200" y1="112" x2="200" y2="46" stroke="${INK}" stroke-width="9" stroke-linecap="round"/>
+           <circle cx="200" cy="36" r="26" fill="#ffb26b" opacity=".45"/>
+           <circle cx="200" cy="36" r="17" fill="none" stroke="${CORAL}" stroke-width="6"/><circle cx="200" cy="36" r="10" fill="#ffb26b"/>
+           <path d="M160 18 l-14 -8 M240 18 l14 -8 M200 -2 v-8" stroke="${CORAL}" stroke-width="5" stroke-linecap="round"/>`,
+    sinal: `<line x1="200" y1="112" x2="200" y2="46" stroke="${INK}" stroke-width="9" stroke-linecap="round"/>
+           <circle cx="200" cy="36" r="8" fill="${CORAL}"/>
+           <path d="M178 22 a30 30 0 0 1 44 0 M166 10 a48 48 0 0 1 68 0" stroke="${CORAL}" stroke-width="5" fill="none" stroke-linecap="round"/>`,
+  };
+  return `<svg viewBox="0 -20 400 420">
+    ${antenas[antena]}
+    <circle cx="200" cy="214" r="108" fill="${CORAL}"/>
+    <path d="M120 150 a95 95 0 0 1 70 -40" stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none" opacity=".35"/>
+    <path d="M94 236 q106 34 212 0" stroke="${INK}" stroke-width="10" fill="none" stroke-linecap="round"/>
+    ${olhos}
+    <circle cx="140" cy="214" r="11" fill="#ffb26b" opacity=".7"/><circle cx="260" cy="214" r="11" fill="#ffb26b" opacity=".7"/>
+    ${boca}${extra}${onda}</svg>`;
+}
+const olhoNormal = `<ellipse cx="166" cy="190" rx="12" ry="16" fill="${INK}"/><ellipse cx="234" cy="190" rx="12" ry="16" fill="${INK}"/>
+  <circle cx="170" cy="184" r="4" fill="#fff"/><circle cx="238" cy="184" r="4" fill="#fff"/>`;
+const olhoLado = `<ellipse cx="172" cy="188" rx="12" ry="16" fill="${INK}"/><ellipse cx="240" cy="188" rx="12" ry="16" fill="${INK}"/>
+  <circle cx="177" cy="182" r="4" fill="#fff"/><circle cx="245" cy="182" r="4" fill="#fff"/>
+  <path d="M150 160 q16 -10 32 -4" stroke="${INK}" stroke-width="6" fill="none" stroke-linecap="round"/>`;
+const olhoSusto = `<circle cx="166" cy="188" r="18" fill="#fff" stroke="${INK}" stroke-width="6"/><circle cx="166" cy="188" r="7" fill="${INK}"/>
+  <circle cx="234" cy="188" r="18" fill="#fff" stroke="${INK}" stroke-width="6"/><circle cx="234" cy="188" r="7" fill="${INK}"/>`;
+const olhoFoco = `<path d="M152 192 q14 -10 28 0" stroke="${INK}" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M220 192 q14 -10 28 0" stroke="${INK}" stroke-width="7" fill="none" stroke-linecap="round"/>`;
+
+const poses = [
+  ['Neutra', 'Apresenta o episódio.', boia({ olhos: olhoNormal, boca: `<path d="M186 212 q14 14 28 0" stroke="${INK}" stroke-width="6" fill="none" stroke-linecap="round"/>` })],
+  ['Explicando', 'Sem braços: aponta com a antena.', boia({ olhos: olhoLado, antena: 'aponta', boca: `<path d="M184 210 q16 18 34 -2" stroke="${INK}" stroke-width="6" fill="none" stroke-linecap="round"/>` })],
+  ['Sacou!', 'A luz acende nos "aha".', boia({ olhos: olhoNormal, antena: 'ideia', boca: `<path d="M180 208 q20 26 40 0 z" fill="${INK}"/>` })],
+  ['Uou', 'Números grandes, séries.', boia({ olhos: olhoSusto, boca: `<ellipse cx="200" cy="220" rx="10" ry="13" fill="${INK}"/>` })],
+  ['Medindo', 'Transmite dado; chama a previsão.', boia({ olhos: olhoFoco, antena: 'sinal', boca: `<path d="M190 214 h20" stroke="${INK}" stroke-width="6" stroke-linecap="round"/>` })],
+];
+document.getElementById('boias').innerHTML = poses.map(([t, d, s]) => `<div class="card">${s}<b>${t}</b><small>${d}</small></div>`).join('');
+
+const gota = `<svg viewBox="0 -20 400 420">
+  <path d="M200 40 C200 40 300 160 300 230 a100 100 0 0 1 -200 0 C100 160 200 40 200 40 Z" fill="#48cae4"/>
+  <path d="M140 220 a60 60 0 0 1 20 -50" stroke="#eaf9ff" stroke-width="12" fill="none" stroke-linecap="round"/>
+  ${olhoNormal.replaceAll('190','215').replaceAll('184','209')}
+  <path d="M186 240 q14 14 28 0" stroke="${INK}" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="230" r="150" fill="none" stroke="${INK}" stroke-width="4" stroke-dasharray="4 14" stroke-linecap="round"/></svg>`;
+
+const solupa = `<svg viewBox="0 -20 400 420">
+  <path d="M280 290 L350 360" stroke="${INK}" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="200" cy="190" r="130" fill="none" stroke="${CORAL}" stroke-width="30"/>
+  <circle cx="200" cy="190" r="84" fill="${CORAL}"/>
+  ${olhoNormal.replaceAll('rx="12" ry="16"','rx="10" ry="14"').replaceAll('166','176').replaceAll('234','224').replaceAll('170','180').replaceAll('238','228')}
+  <path d="M188 212 q12 12 24 0" stroke="${INK}" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M40 330 C110 290 170 290 240 320 S370 350 400 310 L400 400 L40 400 Z" fill="${INK}" opacity="0"/></svg>`;
+
+document.getElementById('alts').innerHTML = [
+  ['B · Gota', 'Uma gota d’água que mostra que a água gira no lugar e só a energia viaja (a órbita tracejada). Didática, mas genérica e fora da paleta coral.', gota],
+  ['C · Lupa-sol', 'O anel do logo vira lente: combina com "análise". Tem menos ligação com o mar e é difícil de pôr dentro das cenas.', solupa],
+].map(([t, d, s]) => `<div class="card">${s}<b>${t}</b><small>${d}</small></div>`).join('');
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "arquivos": [
+    {
+      "origem": "pecas/2026-09-trailer-app/capturas/",
+      "destino": "capturas/",
+      "nota": "Telas de surfzada.com.br (scripts/captura). Para refazer, ver post.md > Notas técnicas."
+    },
+    {
+      "origem": "pecas/2026-09-trailer-app/musica.mp3",
+      "destino": "musica.mp3",
+      "nota": "Trilha da Pixabay (catch22music). Licença não permite redistribuir o arquivo solto."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "arquivos": [
+    {
+      "origem": "pecas/2026-10-saquarema-cinematico/refactor.mp4",
+      "destino": "clipes/refactor.mp4",
+      "converter": {
+        "orientacao": "vertical",
+        "hdr": false,
+        "corte": [
+          0,
+          9
+        ]
+      },
+      "nota": "Começo refeito pelo João no CapCut (4K SDR, já com as faixas pretas)"
+    },
+    {
+      "origem": "Captações/SAQUAREMA-0626/IMG_6552.MOV",
+      "destino": "clipes/atletas2.mp4",
+      "converter": {
+        "orientacao": "vertical",
+        "hdr": true
+      }
+    },
+    {
+      "origem": "Captações/SAQUAREMA-0626/IMG_6551.MOV",
+      "destino": "clipes/atletas1.mp4",
+      "converter": {
+        "orientacao": "vertical",
+        "hdr": true
+      }
+    },
+    {
+      "origem": "Captações/SAQUAREMA-0626/IMG_6494.MOV",
+      "destino": "clipes/fotografos.mp4",
+      "converter": {
+        "orientacao": "vertical",
+        "hdr": true
+      }
+    },
+    {
+      "origem": "Captações/SAQUAREMA-0626/IMG_6554.MOV",
+      "destino": "clipes/torcida.mp4",
+      "converter": {
+        "orientacao": "vertical",
+        "hdr": true
+      }
+    },
+    {
+      "origem": "Captações/SAQUAREMA-0626/IMG_7912.MOV",
+      "destino": "clipes/multidao.mp4",
+      "converter": {
+        "orientacao": "vertical",
+        "hdr": true
+      }
+    },
+    {
+      "origem": "Captações/SAQUAREMA-0626/IMG_6553.MOV",
+      "destino": "clipes/guardasois.mp4",
+      "converter": {
+        "orientacao": "vertical",
+        "hdr": true
+      }
+    },
+    {
+      "origem": "Captações/SAQUAREMA-0626/MVI_8979.MOV",
+      "destino": "clipes/cachorro.mp4",
+      "converter": {
+        "orientacao": "deitado",
+        "hdr": false
+      }
+    },
+    {
+      "origem": "Captações/SAQUAREMA-0626/MVI_8987.MOV",
+      "destino": "clipes/saindo.mp4",
+      "converter": {
+        "orientacao": "deitado",
+        "hdr": false,
+        "corte": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "origem": "Captações/SAQUAREMA-0626/MVI_8983.MOV",
+      "destino": "clipes/areia.mp4",
+      "converter": {
+        "orientacao": "deitado",
+        "hdr": false
+      }
+    },
+    {
+      "origem": "Captações/SAQUAREMA-0626/MVI_8981.MOV",
+      "destino": "clipes/close.mp4",
+      "converter": {
+        "orientacao": "deitado",
+        "hdr": false,
+        "corte": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "origem": "Captações/SAQUAREMA-0626/MVI_8688.MOV",
+      "destino": "clipes/banco.mp4",
+      "converter": {
+        "orientacao": "deitado",
+        "hdr": false,
+        "corte": [
+          30,
+          40
+        ]
+      }
+    }
+  ]
+}

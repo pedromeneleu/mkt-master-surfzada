@@ -1,0 +1,308 @@
+{
+  "geradoEm": "2026-09-30T18:42:19.802Z",
+  "pico": {
+    "id": "021f81eb-0acf-4660-b75c-cf30b9aa83da",
+    "nome": "Arpoador",
+    "cidade": "Rio de Janeiro"
+  },
+  "grafico": {
+    "arquivo": "capturas/energia/grafico.png",
+    "largura": 358,
+    "altura": 251,
+    "escala": 3
+  },
+  "graficoGuia": {
+    "arquivo": "capturas/energia/grafico-guia.png",
+    "largura": 358,
+    "altura": 251,
+    "escala": 3
+  },
+  "balao": {
+    "arquivo": "capturas/energia/balao.png",
+    "largura": 311,
+    "altura": 262,
+    "escala": 3,
+    "x": -8,
+    "y": -111.390625
+  },
+  "ponteiro": {
+    "x": 290,
+    "y": 162.8875
+  },
+  "direcoes": {
+    "arquivo": "capturas/energia/timeline-direcoes.png",
+    "largura": 358,
+    "altura": 360,
+    "escala": 3
+  },
+  "quadros": [
+    {
+      "arquivo": "capturas/energia/mapa/00.png",
+      "rotulo": "Hoje, 00h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/01.png",
+      "rotulo": "Hoje, 03h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/02.png",
+      "rotulo": "Hoje, 06h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/03.png",
+      "rotulo": "Hoje, 09h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/04.png",
+      "rotulo": "Hoje, 12h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/05.png",
+      "rotulo": "Hoje, 15h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/06.png",
+      "rotulo": "Hoje, 18h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/07.png",
+      "rotulo": "Hoje, 21h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/08.png",
+      "rotulo": "Amanhã, 00h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/09.png",
+      "rotulo": "Amanhã, 03h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/10.png",
+      "rotulo": "Amanhã, 06h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/11.png",
+      "rotulo": "Amanhã, 09h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/12.png",
+      "rotulo": "Amanhã, 12h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/13.png",
+      "rotulo": "Amanhã, 15h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/14.png",
+      "rotulo": "Amanhã, 18h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/15.png",
+      "rotulo": "Amanhã, 21h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/16.png",
+      "rotulo": "sex 02/10, 00h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/17.png",
+      "rotulo": "sex 02/10, 03h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/18.png",
+      "rotulo": "sex 02/10, 06h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/19.png",
+      "rotulo": "sex 02/10, 09h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/20.png",
+      "rotulo": "sex 02/10, 12h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/21.png",
+      "rotulo": "sex 02/10, 15h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/22.png",
+      "rotulo": "sex 02/10, 18h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/23.png",
+      "rotulo": "sex 02/10, 21h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/24.png",
+      "rotulo": "sáb 03/10, 00h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/25.png",
+      "rotulo": "sáb 03/10, 03h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/26.png",
+      "rotulo": "sáb 03/10, 06h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/27.png",
+      "rotulo": "sáb 03/10, 09h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/28.png",
+      "rotulo": "sáb 03/10, 12h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/29.png",
+      "rotulo": "sáb 03/10, 15h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/30.png",
+      "rotulo": "sáb 03/10, 18h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/31.png",
+      "rotulo": "sáb 03/10, 21h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/32.png",
+      "rotulo": "dom 04/10, 00h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/33.png",
+      "rotulo": "dom 04/10, 03h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/34.png",
+      "rotulo": "dom 04/10, 06h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/35.png",
+      "rotulo": "dom 04/10, 09h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/36.png",
+      "rotulo": "dom 04/10, 12h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/37.png",
+      "rotulo": "dom 04/10, 15h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/38.png",
+      "rotulo": "dom 04/10, 18h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/39.png",
+      "rotulo": "dom 04/10, 21h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/40.png",
+      "rotulo": "seg 05/10, 00h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/41.png",
+      "rotulo": "seg 05/10, 03h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/42.png",
+      "rotulo": "seg 05/10, 06h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/43.png",
+      "rotulo": "seg 05/10, 09h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/44.png",
+      "rotulo": "seg 05/10, 12h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/45.png",
+      "rotulo": "seg 05/10, 15h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/46.png",
+      "rotulo": "seg 05/10, 18h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/47.png",
+      "rotulo": "seg 05/10, 21h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/48.png",
+      "rotulo": "ter 06/10, 00h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/49.png",
+      "rotulo": "ter 06/10, 03h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/50.png",
+      "rotulo": "ter 06/10, 06h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/51.png",
+      "rotulo": "ter 06/10, 09h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/52.png",
+      "rotulo": "ter 06/10, 12h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/53.png",
+      "rotulo": "ter 06/10, 15h"
+    },
+    {
+      "arquivo": "capturas/energia/mapa/54.png",
+      "rotulo": "ter 06/10, 18h"
+    }
+  ],
+  "largura": 358,
+  "altura": 360,
+  "caixas": {
+    "chipEnergia": {
+      "x": 286.46875,
+      "y": 0,
+      "w": 71.53125,
+      "h": 28
+    },
+    "mapa": {
+      "x": 0,
+      "y": 44,
+      "w": 358,
+      "h": 260
+    },
+    "trilho": {
+      "x": 0,
+      "y": 316,
+      "w": 226,
+      "h": 44
+    },
+    "escala": {
+      "x": 110,
+      "y": 52,
+      "w": 240,
+      "h": 53
+    }
+  },
+  "caixasGrafico": {
+    "barras": {
+      "x": 17,
+      "y": 89.6875,
+      "w": 324,
+      "h": 102
+    },
+    "media": {
+      "x": 17,
+      "y": 127.6875,
+      "w": 324,
+      "h": 14
+    },
+    "legenda": {
+      "x": 17,
+      "y": 45.6875,
+      "w": 241.59375,
+      "h": 18
+    }
+  }
+}

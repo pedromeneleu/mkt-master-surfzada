@@ -1,0 +1,5 @@
+# Scripts Python das peças (ex.: pecas/2026-10-tributo-andy/scripts) e dos produtos.
+# Instalar: py -m venv .venv && .venv\Scripts\pip install -r requirements.txt
+numpy
+pillow
+opencv-python-headless

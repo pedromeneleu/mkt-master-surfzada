@@ -1,0 +1,14 @@
+{
+  "arquivos": [
+    {
+      "origem": "pecas/2026-10-meme-one-shot/fundo-ipanema.mp4",
+      "destino": "fundo-ipanema.mp4",
+      "nota": "IMG_6440 (Ipanema, 19/06/2026 7h45) em SDR, cortado em 0–6,6 s, sem GPS"
+    },
+    {
+      "origem": "pecas/2026-10-meme-one-shot/fundo-saquarema.mp4",
+      "destino": "fundo-saquarema.mp4",
+      "nota": "IMG_6577 (Saquarema, do morro) em SDR, cortado em 1,2–12,4 s"
+    }
+  ]
+}

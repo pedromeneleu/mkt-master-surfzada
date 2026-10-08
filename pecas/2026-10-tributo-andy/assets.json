@@ -1,0 +1,24 @@
+{
+  "arquivos": [
+    {
+      "origem": "pecas/2026-10-tributo-andy/giro/",
+      "destino": "giro/",
+      "nota": "Volta da camisa (225 JPGs 2160×2160), gerada por scripts/preparar_giro.py a partir do shot_01_v11"
+    },
+    {
+      "origem": "pecas/2026-10-tributo-andy/fotos/andy/*.jpg",
+      "destino": "fotos/andy/",
+      "nota": "Fotos de fotógrafos e da WSL, sem licença livre: não vão para o git. Créditos em creditos-fotos-andy.json"
+    },
+    {
+      "origem": "pecas/2026-10-tributo-andy/arte/",
+      "destino": "arte/",
+      "nota": "Arte das costas sem fundo (scripts/preparar_imagens.py)"
+    },
+    {
+      "origem": "pecas/2026-10-tributo-andy/reticula/",
+      "destino": "reticula/",
+      "nota": "Hanalei em retícula (scripts/preparar_imagens.py)"
+    }
+  ]
+}

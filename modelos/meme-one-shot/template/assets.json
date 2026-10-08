@@ -1,0 +1,10 @@
+{
+  "arquivos": [
+    {
+      "origem": "Captações/<PASTA-DA-CAPTACAO>/<ARQUIVO>.MOV",
+      "destino": "fundo.mp4",
+      "converter": { "orientacao": "vertical", "hdr": true, "corte": [0, 8] },
+      "nota": "TROQUE: o plano do mar (iPhone em HDR → SDR, recortado). O corte em segundos tem que bater com SEGUNDOS em composicoes.tsx"
+    }
+  ]
+}

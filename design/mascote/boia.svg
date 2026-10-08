@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Boia, mascote do Ondalogia">
+  <!--
+    Boia: uma boia oceanográfica (as que medem altura, período e direção das ondas).
+    Círculo coral sobre a onda preta = o próprio logo da Surfzada.
+    Cada grupo com id é uma peça do rig para animar no Remotion.
+  -->
+  <g id="boia">
+    <g id="antena">
+      <line x1="200" y1="112" x2="200" y2="46" stroke="#0a0a0a" stroke-width="9" stroke-linecap="round"/>
+      <circle id="luz-anel" cx="200" cy="36" r="17" fill="none" stroke="#ff7a59" stroke-width="6"/>
+      <circle id="luz" cx="200" cy="36" r="8" fill="#ff7a59"/>
+    </g>
+    <g id="corpo">
+      <circle cx="200" cy="214" r="108" fill="#ff7a59"/>
+      <path d="M120 150 a95 95 0 0 1 70 -40" stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none" opacity=".35"/>
+      <path d="M94 236 q106 34 212 0" stroke="#0a0a0a" stroke-width="10" fill="none" stroke-linecap="round"/>
+    </g>
+    <g id="rosto">
+      <g id="olhos">
+        <ellipse cx="166" cy="190" rx="12" ry="16" fill="#0a0a0a"/>
+        <ellipse cx="234" cy="190" rx="12" ry="16" fill="#0a0a0a"/>
+        <circle cx="170" cy="184" r="4" fill="#fff"/>
+        <circle cx="238" cy="184" r="4" fill="#fff"/>
+      </g>
+      <circle cx="140" cy="214" r="11" fill="#ffb26b" opacity=".7"/>
+      <circle cx="260" cy="214" r="11" fill="#ffb26b" opacity=".7"/>
+      <path id="boca" d="M186 212 q14 14 28 0" stroke="#0a0a0a" stroke-width="6" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+  <path id="onda" d="M0 292 C70 250 130 250 200 282 S330 318 400 262 L400 400 L0 400 Z" fill="#0a0a0a"/>
+</svg>
