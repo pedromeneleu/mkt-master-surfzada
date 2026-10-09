@@ -54,6 +54,8 @@ Texto essencial e créditos fora dessas faixas. Carrossel 1:1/4:5: margem de 64 
 ## Tom de voz
 
 - Português do Brasil, direto, de surfista para surfista ("Bora surfar?", "O mar não mente.").
+- A marca é masculina: **o** Surfzada, **no** app do Surfzada, **do** Surfzada (nunca "a Surfzada").
+- CTA principal: o app do Surfzada, disponível na App Store; o site (surfzada.com.br) vem junto.
 - Ganchos genéricos (servem para qualquer pico), não presos a uma cidade.
 - Humor leve, sem duplo sentido (ex.: trocou-se "O que tenho usado:" por "Minha dose diária:").
 - Dado é dado: altura, período e vento sempre conferidos na API/fonte.

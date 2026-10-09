@@ -15,6 +15,7 @@ const arquivo = arquivosDaPeca(SLUG);
  * da marca recebem `em` negativo para já estarem inteiros no quadro 0.
  */
 const PRONTO = -100;
+// A marca é masculina: "o Surfzada", "o app do Surfzada".
 const MARGEM = 88;
 export const TOTAL = 9;
 
@@ -123,11 +124,11 @@ export const PONTOS: Ponto[] = [
     fecha: 'Isso tirou o ruído da cabeça dele.',
   },
   {
-    titulo: 'Vê a previsão\nna Surfzada antes\nde sair de casa.',
+    titulo: 'Confere o app\ndo Surfzada antes\nde sair de casa.',
     abre: 'Nada de viagem perdida nem de chegar com o mar flat.',
-    chamada: 'Antes de cair, ele confere:',
+    chamada: 'Antes de cair, ele vê:',
     itens: ['Altura e período do swell', 'Direção e força do vento', 'O melhor dia da semana em cada pico'],
-    fecha: 'previsão de surf grátis em surfzada.com.br',
+    fecha: 'Baixe na App Store',
     cta: true,
   },
   {
@@ -181,7 +182,7 @@ export function SlidePonto({ i }: { i: number }) {
         {p.cta ? (
           <>
             <Logo tamanho={40} em={PRONTO} cor={escuro ? '#fff' : COR.tinta} />
-            <span style={{ fontSize: 28, fontWeight: 500, color: secundario }}>{p.fecha}</span>
+            <span style={{ fontSize: 32, fontWeight: 600 }}>{p.fecha} →</span>
           </>
         ) : (
           p.fecha
@@ -199,16 +200,19 @@ export function Fecho() {
         <div style={{ marginTop: 30 }}>
           <Titulo texto={'Mas fizeram dele\n*outro* *surfista.*'} em={PRONTO} tamanho={88} peso={700} cor="#fff" />
         </div>
-        <div style={{ marginTop: 64, display: 'inline-block', padding: '20px 36px', borderRadius: 999, background: '#fff', color: COR.tinta, fontSize: 40, fontWeight: 600 }}>
+        <div style={{ marginTop: 56, display: 'inline-block', padding: '20px 36px', borderRadius: 999, background: '#fff', color: COR.tinta, fontSize: 40, fontWeight: 600 }}>
           Salva pra começar segunda.
+        </div>
+        <div style={{ marginTop: 56, padding: '34px 40px', borderRadius: 28, background: COR.tinta2, border: '2px solid rgba(255,255,255,0.08)' }}>
+          <div style={{ fontSize: 44, fontWeight: 700, letterSpacing: '-0.02em', color: '#fff' }}>O app do Surfzada chegou.</div>
+          <div style={{ marginTop: 10, fontSize: 32, lineHeight: 1.35, color: COR.apagado }}>Previsão de surf no bolso, antes de cada sessão.</div>
         </div>
       </div>
       <div style={{ position: 'absolute', left: MARGEM, right: MARGEM, bottom: MARGEM, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Logo tamanho={44} em={PRONTO} cor="#fff" />
-        <div style={{ fontSize: 26, fontWeight: 500, color: COR.apagado, textAlign: 'right', lineHeight: 1.35 }}>
-          previsão de surf grátis
-          <br />
-          surfzada.com.br
+        <div style={{ textAlign: 'right', lineHeight: 1.35 }}>
+          <div style={{ fontSize: 30, fontWeight: 600, color: '#fff' }}>Disponível na App Store</div>
+          <div style={{ fontSize: 26, fontWeight: 500, color: COR.apagado }}>e em surfzada.com.br</div>
         </div>
       </div>
     </Slide>

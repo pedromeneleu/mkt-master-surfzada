@@ -29,9 +29,9 @@ carrossel:
 ## Briefing
 
 Carrossel 4:5 (9 slides) adaptado do post "How to become unrecognizable in 6 weeks as a surfer"
-(@surfwithruben_): só a ideia, com texto próprio em pt-BR e no tom da Surfzada, sem as imagens
+(@surfwithruben_): só a ideia, com texto próprio em pt-BR e no tom do Surfzada, sem as imagens
 dele. Texto todo em terceira pessoa ("ele parou…", "construiu…"). Os 4 pontos do original viraram
-01–04; 05 (CTA: ver a previsão na Surfzada antes de sair de casa) e 06 (constância) são nossos. Público: surfista intermediário que quer evoluir. Objetivo: salvamentos.
+01–04; 05 (CTA: conferir a previsão no app do Surfzada, recém-lançado na App Store) e 06 (constância) são nossos. Público: surfista intermediário que quer evoluir. Objetivo: salvamentos.
 
 ## Roteiro
 
@@ -43,9 +43,9 @@ dele. Texto todo em terceira pessoa ("ele parou…", "construiu…"). Os 4 ponto
 | 4 | tinta | 02 Construiu um motor de remada (aeróbico, ombro, respiração) |
 | 5 | claro | 03 Deixou o pop-up no automático (explosivo, limpo, sem atraso) |
 | 6 | tinta | 04 Parou de chutar (progressão, registro, ajuste) |
-| 7 | claro | 05 Vê a previsão na Surfzada antes de sair de casa (swell, vento, melhor dia) · logo + surfzada.com.br |
+| 7 | claro | 05 Confere o app do Surfzada antes de sair de casa (swell, vento, melhor dia) · logo + "Baixe na App Store →" |
 | 8 | tinta | 06 Surfou mais vezes, não mais tempo (constância) |
-| 9 | tinta | Fecho: 6 semanas não fazem ninguém profissional. Mas fizeram dele *outro surfista.* · Salva pra começar segunda. |
+| 9 | tinta | Fecho: 6 semanas não fazem ninguém profissional. Mas fizeram dele *outro surfista.* · Salva pra começar segunda. · "O app do Surfzada chegou." · logo + "Disponível na App Store / e em surfzada.com.br" |
 
 ## Legenda
 
@@ -54,7 +54,10 @@ dele. Texto todo em terceira pessoa ("ele parou…", "construiu…"). Os 4 ponto
 Treino de surfista (não de academia), fôlego pra remar, pop-up no automático, um plano em vez de
 chute, previsão conferida antes de sair de casa e constância. Qual desses você ainda não faz?
 
-Salva e começa segunda. Previsão de surf grátis: Surfzada
+Salva e começa segunda.
+
+O app do Surfzada chegou: previsão de surf no bolso, antes de cada sessão. Já disponível na App
+Store 📲
 
 ## Hashtags
 
@@ -71,7 +74,10 @@ Salva e começa segunda. Previsão de surf grátis: Surfzada
 ## Notas de revisão
 
 - 2026-10-09: rascunho criado a partir de prints do post original e de duas fotos de referência.
-- 2026-10-09: texto em terceira pessoa; o ponto 05 virou CTA da Surfzada (saiu o "10 minutos
+- 2026-10-09: texto em terceira pessoa; o ponto 05 virou CTA do Surfzada (saiu o "10 minutos
   vendo a série").
+- 2026-10-09: CTAs para o app (lançado na App Store), além do site; marca no masculino ("o
+  Surfzada"). Sem o selo oficial "Download on the App Store": se for usar, baixar o selo da Apple
+  (Apple Marketing Tools) e pôr em `assets/`.
 - As fotos de referência são pequenas (500×333 e 830×552) e ficam moles no slide; as definitivas
   precisam ter pelo menos ~2000 px de largura.
