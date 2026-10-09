@@ -40,7 +40,7 @@ export function Capa() {
   return (
     <Slide n={1} tom="escuro" rotulo="TREINO · 6 SEMANAS">
       <div style={{ marginTop: 210 }}>
-        <Titulo texto={'Como ficar\n*irreconhecível*\nno surf em\n6 semanas'} em={PRONTO} tamanho={118} peso={700} cor="#fff" />
+        <Titulo texto={'Como ele ficou\n*irreconhecível*\nno surf em\n6 semanas'} em={PRONTO} tamanho={118} peso={700} cor="#fff" />
       </div>
       <div style={{ position: 'absolute', left: MARGEM, right: MARGEM, bottom: MARGEM, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Logo tamanho={40} em={PRONTO} cor="#fff" />
@@ -91,46 +91,47 @@ export function Comparacao() {
   );
 }
 
-export type Ponto = { titulo: string; abre: string; chamada: string; itens: string[]; fecha: string };
+export type Ponto = { titulo: string; abre: string; chamada: string; itens: string[]; fecha: string; cta?: boolean };
 
 export const PONTOS: Ponto[] = [
   {
-    titulo: 'Parei de treinar\ncomo marombeiro.',
-    abre: 'Eu pegava pesado e corria atrás de número. O surf não liga pro seu supino.',
-    chamada: 'Passei a treinar:',
+    titulo: 'Parou de treinar\ncomo marombeiro.',
+    abre: 'Ele pegava pesado e corria atrás de número. Só que o surf não liga pro supino.',
+    chamada: 'Passou a treinar:',
     itens: ['Força rotacional', 'Resistência de ombro', 'Explosão de quadril', 'Fôlego pra repetir o esforço'],
     fecha: 'Aí começou a aparecer na água.',
   },
   {
-    titulo: 'Construí um\nmotor de remada.',
-    abre: 'Técnica não adianta nada se você morre em 20 minutos.',
-    chamada: 'Construí:',
+    titulo: 'Construiu um\nmotor de remada.',
+    abre: 'Técnica não adianta nada se o fôlego acaba em 20 minutos.',
+    chamada: 'Construiu:',
     itens: ['Base aeróbica', 'Ombro que aguenta remar muito', 'Respiração controlada'],
-    fecha: 'Hoje surfo mais tempo, sem desespero.',
+    fecha: 'Hoje surfa mais tempo, sem desespero.',
   },
   {
-    titulo: 'Deixei o pop-up\nno automático.',
-    abre: 'Antes eu pensava, hesitava, duvidava na hora de levantar.',
+    titulo: 'Deixou o pop-up\nno automático.',
+    abre: 'Antes ele pensava, hesitava, duvidava na hora de levantar.',
     chamada: 'Agora:',
     itens: ['Explosivo', 'Limpo', 'Sem atraso'],
     fecha: 'Repetição fora d’água mudou isso.',
   },
   {
-    titulo: 'Parei de\nchutar.',
+    titulo: 'Parou de\nchutar.',
     abre: 'Treino aleatório = resultado aleatório.',
-    chamada: 'Montei um sistema:',
+    chamada: 'Montou um sistema:',
     itens: ['Progressão', 'Registro de cada treino', 'Ajuste toda semana'],
-    fecha: 'Isso tirou o ruído da cabeça.',
+    fecha: 'Isso tirou o ruído da cabeça dele.',
   },
   {
-    titulo: 'Comecei a ler o mar\nantes de entrar.',
-    abre: 'Pegar onda começa na areia.',
-    chamada: 'Antes de cair:',
-    itens: ['Olho a previsão: swell, vento e maré', 'Fico 10 minutos vendo onde a série quebra', 'Acho o canal pra remar menos'],
-    fecha: 'Menos remada perdida, mais onda.',
+    titulo: 'Vê a previsão\nna Surfzada antes\nde sair de casa.',
+    abre: 'Nada de viagem perdida nem de chegar com o mar flat.',
+    chamada: 'Antes de cair, ele confere:',
+    itens: ['Altura e período do swell', 'Direção e força do vento', 'O melhor dia da semana em cada pico'],
+    fecha: 'previsão de surf grátis em surfzada.com.br',
+    cta: true,
   },
   {
-    titulo: 'Surfei mais vezes,\nnão mais tempo.',
+    titulo: 'Surfou mais vezes,\nnão mais tempo.',
     abre: 'Uma maratona no fim de semana não segura a evolução.',
     chamada: 'O que funcionou:',
     itens: ['Sessões curtas e frequentes', 'Um foco por sessão', 'Descanso de verdade entre elas'],
@@ -172,9 +173,19 @@ export function SlidePonto({ i }: { i: number }) {
           fontSize: 40,
           fontWeight: 600,
           letterSpacing: '-0.01em',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
         }}
       >
-        {p.fecha}
+        {p.cta ? (
+          <>
+            <Logo tamanho={40} em={PRONTO} cor={escuro ? '#fff' : COR.tinta} />
+            <span style={{ fontSize: 28, fontWeight: 500, color: secundario }}>{p.fecha}</span>
+          </>
+        ) : (
+          p.fecha
+        )}
       </div>
     </Slide>
   );
@@ -184,9 +195,9 @@ export function Fecho() {
   return (
     <Slide n={TOTAL} tom="escuro" rotulo="RESUMINDO">
       <div style={{ marginTop: 160 }}>
-        <Titulo texto={'6 semanas não te\nfazem profissional.'} em={PRONTO} tamanho={82} peso={600} cor={COR.apagado} />
+        <Titulo texto={'6 semanas não fazem\nninguém profissional.'} em={PRONTO} tamanho={82} peso={600} cor={COR.apagado} />
         <div style={{ marginTop: 30 }}>
-          <Titulo texto={'Mas te fazem\n*outro* *surfista.*'} em={PRONTO} tamanho={108} peso={700} cor="#fff" />
+          <Titulo texto={'Mas fizeram dele\n*outro* *surfista.*'} em={PRONTO} tamanho={88} peso={700} cor="#fff" />
         </div>
         <div style={{ marginTop: 64, display: 'inline-block', padding: '20px 36px', borderRadius: 999, background: '#fff', color: COR.tinta, fontSize: 40, fontWeight: 600 }}>
           Salva pra começar segunda.

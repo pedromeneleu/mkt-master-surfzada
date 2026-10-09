@@ -30,29 +30,29 @@ carrossel:
 
 Carrossel 4:5 (9 slides) adaptado do post "How to become unrecognizable in 6 weeks as a surfer"
 (@surfwithruben_): só a ideia, com texto próprio em pt-BR e no tom da Surfzada, sem as imagens
-dele. Os 4 pontos do original viraram 01–04; 05 (ler o mar / previsão, que puxa para a Surfzada) e
-06 (constância) são nossos. Público: surfista intermediário que quer evoluir. Objetivo: salvamentos.
+dele. Texto todo em terceira pessoa ("ele parou…", "construiu…"). Os 4 pontos do original viraram
+01–04; 05 (CTA: ver a previsão na Surfzada antes de sair de casa) e 06 (constância) são nossos. Público: surfista intermediário que quer evoluir. Objetivo: salvamentos.
 
 ## Roteiro
 
 | Slide | Fundo | Conteúdo |
 |---|---|---|
-| 1 | tinta | Capa: Como ficar *irreconhecível* no surf em 6 semanas · logo · "arrasta →" |
+| 1 | tinta | Capa: Como ele ficou *irreconhecível* no surf em 6 semanas · logo · "arrasta →" |
 | 2 | claro | Comparação: foto do caldo ("Isso") → seta → foto da batida ("Pra isso") |
-| 3 | claro | 01 Parei de treinar como marombeiro (rotacional, ombro, quadril, fôlego) |
-| 4 | tinta | 02 Construí um motor de remada (aeróbico, ombro, respiração) |
-| 5 | claro | 03 Deixei o pop-up no automático (explosivo, limpo, sem atraso) |
-| 6 | tinta | 04 Parei de chutar (progressão, registro, ajuste) |
-| 7 | claro | 05 Comecei a ler o mar antes de entrar (previsão, série, canal) |
-| 8 | tinta | 06 Surfei mais vezes, não mais tempo (constância) |
-| 9 | tinta | Fecho: 6 semanas não te fazem profissional. Mas te fazem *outro surfista.* · Salva pra começar segunda. |
+| 3 | claro | 01 Parou de treinar como marombeiro (rotacional, ombro, quadril, fôlego) |
+| 4 | tinta | 02 Construiu um motor de remada (aeróbico, ombro, respiração) |
+| 5 | claro | 03 Deixou o pop-up no automático (explosivo, limpo, sem atraso) |
+| 6 | tinta | 04 Parou de chutar (progressão, registro, ajuste) |
+| 7 | claro | 05 Vê a previsão na Surfzada antes de sair de casa (swell, vento, melhor dia) · logo + surfzada.com.br |
+| 8 | tinta | 06 Surfou mais vezes, não mais tempo (constância) |
+| 9 | tinta | Fecho: 6 semanas não fazem ninguém profissional. Mas fizeram dele *outro surfista.* · Salva pra começar segunda. |
 
 ## Legenda
 
 6 semanas não te fazem profissional. Mas mudam o seu surf mais do que você imagina 🌊
 
 Treino de surfista (não de academia), fôlego pra remar, pop-up no automático, um plano em vez de
-chute, ler o mar antes de entrar e constância. Qual desses você ainda não faz?
+chute, previsão conferida antes de sair de casa e constância. Qual desses você ainda não faz?
 
 Salva e começa segunda. Previsão de surf grátis: Surfzada
 
@@ -71,5 +71,7 @@ Salva e começa segunda. Previsão de surf grátis: Surfzada
 ## Notas de revisão
 
 - 2026-10-09: rascunho criado a partir de prints do post original e de duas fotos de referência.
+- 2026-10-09: texto em terceira pessoa; o ponto 05 virou CTA da Surfzada (saiu o "10 minutos
+  vendo a série").
 - As fotos de referência são pequenas (500×333 e 830×552) e ficam moles no slide; as definitivas
   precisam ter pelo menos ~2000 px de largura.
