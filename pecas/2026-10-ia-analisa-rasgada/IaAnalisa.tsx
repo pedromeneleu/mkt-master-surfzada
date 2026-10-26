@@ -64,8 +64,8 @@ const NOTAS = [
   { em: CENA.analise + 126, numero: '03', titulo: 'PESO', texto: 'Peso no pé de trás.\nSaiu *de ré* da onda.' },
 ];
 
-/** Notas dos 5 juízes: cortam a maior e a menor e fazem a média (5,83 → 5,8). */
-const JUIZES = ['5,5', '6,0', '5,8', '5,7', '6,3'];
+/** Notas dos 5 juízes: cortam a maior e a menor e fazem a média (2,33 → 2,3). */
+const JUIZES = ['2,0', '2,5', '2,3', '2,2', '3,1'];
 const DESCARTADAS = [0, 4];
 
 export type Gancho = { abre: string; vira: string };
@@ -358,7 +358,7 @@ function Placar() {
         ) : (
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <Etiqueta texto="NOTA FINAL" tamanho={30} cor="#fff" />
-            <Nota valor={5.8} em={virada + 2} dur={16} />
+            <Nota valor={2.3} em={virada + 2} dur={16} />
           </div>
         )}
       </div>
@@ -401,11 +401,11 @@ function LinhaIdeal() {
       </div>
       <div style={{ position: 'absolute', left: 0, top: SPLIT.a, transform: `translateX(${(1 - entra) * -W}px)` }}>
         <Janela clipe="rasgada" t={t} largura={W} altura={SPLIT.h} camera={camera} />
-        <Visor largura={W} altura={SPLIT.h} esquerda="O QUE ROLOU" direita="5,8" destaque={false} />
+        <Visor largura={W} altura={SPLIT.h} esquerda="O QUE ROLOU" direita="2,3" destaque={false} />
       </div>
       <div style={{ position: 'absolute', left: 0, top: SPLIT.b, transform: `translateX(${(1 - entra) * W}px)` }}>
         <Janela clipe="rasgada" t={t} largura={W} altura={SPLIT.h} camera={camera} ideal={ideal} fantasma escurece={0.25} />
-        <Visor largura={W} altura={SPLIT.h} esquerda="● LINHA IDEAL" direita={frame > 40 ? '7,8' : '5,8'} baixoEsquerda="JOELHO DOBRADO · BRAÇO NA FRENTE · PESO NA FRENTE" />
+        <Visor largura={W} altura={SPLIT.h} esquerda="● LINHA IDEAL" direita={frame > 40 ? '4,3' : '2,3'} baixoEsquerda="JOELHO DOBRADO · BRAÇO NA FRENTE · PESO NA FRENTE" />
       </div>
     </AbsoluteFill>
   );

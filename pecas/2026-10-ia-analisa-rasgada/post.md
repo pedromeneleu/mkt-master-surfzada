@@ -67,9 +67,9 @@ pro lip, joga água, abre os braços, cai de costas e a prancha voa.
 | 4–6 s | Nota 01 | Câmera lenta (0,45×), punch-in no tronco, anel no punho mais aberto: "MODO AVIÃO" | **01 BRAÇOS** · Abriu os braços de avião. O tronco *não girou* junto. | `pop` |
 | 6–8 s | Nota 02 | Punch-in nas pernas, anel no joelho com o ângulo medido na pose (mediana de ±4 quadros: 158–173°) | **02 JOELHOS** · Perna esticada na batida. Chegou *duro* no lip. | `pop` |
 | 8–12 s | Nota 03 + queda | Plano aberto, ele cai de costas; "PESO ATRÁS" nos pés e carimbo **VACA DETECTADA** | **03 PESO** · Peso no pé de trás. Saiu *de ré* da onda. | `pop`, `impacto` |
-| 12–14 s | Juízes | Queda congelada e escurecida; 5 notas (5,5 · 6,0 · 5,8 · 5,7 · 6,3), corta a maior e a menor | NOTA DOS JUÍZES | `tick` ×5, `clack` |
-| 14–16 s | Nota final | Contador até **5,8** em coral | **mas a intenção foi 10 🤙** | `contador` |
-| 16–20 s | Linha ideal | Split: em cima "O QUE ROLOU · 5,8", embaixo "LINHA IDEAL · 7,8" (esqueleto corrigido sobre o fantasma do real) | **com essa correção: +2 pontos** | `whoosh`, `brilho` |
+| 12–14 s | Juízes | Queda congelada e escurecida; 5 notas (2,0 · 2,5 · 2,3 · 2,2 · 3,1), corta a maior e a menor | NOTA DOS JUÍZES | `tick` ×5, `clack` |
+| 14–16 s | Nota final | Contador até **2,3** em coral | **mas a intenção foi 10 🤙** | `contador` |
+| 16–20 s | Linha ideal | Split: em cima "O QUE ROLOU · 2,3", embaixo "LINHA IDEAL · 4,3" (esqueleto corrigido sobre o fantasma do real) | **com essa correção: +2 pontos** | `whoosh`, `brilho` |
 | 20–24 s | Marca | Tela papel com retícula, logo se desenhando | **Tamo construindo uma IA que lê teu surf.** · EM DESENVOLVIMENTO | `whoosh-curto`, `brilho` |
 | 24–30 s | CTA | Outros surfistas sendo rastreados na janela ("● TEU VÍDEO AQUI", "10 VAGAS GRÁTIS") | **Manda teu vídeo surfando.** · Os *10 primeiros* recebem a análise de graça. · botão **Comenta ANÁLISE 👇** | `notificacao` |
 
@@ -94,7 +94,7 @@ música comercial.
 
 A gente pôs uma IA pra analisar a rasgada do brother e ela não teve pena nenhuma 💀
 
-Nota 5,8. Braço de avião, joelho duro e peso no pé de trás. Mas a intenção foi 10, isso ninguém tira 🤙
+Nota 2,3. Braço de avião, joelho duro e peso no pé de trás. Mas a intenção foi 10, isso ninguém tira 🤙
 
 Tamo construindo na Surfzada uma IA que lê teu surf: identifica a manobra, dá a nota e mostra o
 que ajustar (base, joelho, olhar, timing, parede da onda). Ela ainda tá aprendendo, e quem ensina

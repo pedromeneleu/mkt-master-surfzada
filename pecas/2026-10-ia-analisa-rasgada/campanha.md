@@ -37,9 +37,9 @@ SEQUÊNCIA:
   um, um anel branco no ponto do corpo e a nota: "01 BRAÇOS · Abriu os braços de avião",
   "02 JOELHOS · Perna esticada na batida", "03 PESO · Peso no pé de trás". Na queda, carimbo torto coral
   "VACA DETECTADA".
-12–16 s: imagem congelada escurecida, 5 cartões de juiz (5,5 6,0 5,8 5,7 6,3), risca a maior e a
-  menor, número grande coral "5,8". Texto: "mas a intenção foi 10 🤙"
-16–20 s: tela dividida: em cima "O QUE ROLOU · 5,8", embaixo "LINHA IDEAL · 7,8" com o esqueleto
+12–16 s: imagem congelada escurecida, 5 cartões de juiz (2,0 2,5 2,3 2,2 3,1), risca a maior e a
+  menor, número grande coral "2,3". Texto: "mas a intenção foi 10 🤙"
+16–20 s: tela dividida: em cima "O QUE ROLOU · 2,3", embaixo "LINHA IDEAL · 4,3" com o esqueleto
   corrigido (joelhos mais dobrados, tronco à frente). Texto: "com essa correção: +2 pontos"
 20–24 s: tela papel #F5F5F5 com retícula de meio-tom nas bordas, logo Surfzada. Texto: "Tamo
   construindo uma IA que lê teu surf." e a etiqueta "EM DESENVOLVIMENTO".
@@ -65,8 +65,8 @@ esqueleto (dá para exportar com `npm run quadros -- ia-analisa-rasgada ia-anali
 | 2 | **01 · BRAÇOS** · Abriu os braços de avião. O tronco não girou junto. | Punch-in no tronco, anel branco no punho mais aberto com a etiqueta "MODO AVIÃO". |
 | 3 | **02 · JOELHOS** · Perna esticada na batida. Chegou duro no lip. | Punch-in nas pernas, anel branco no joelho com o ângulo medido (ex.: 166°) grande ao lado. |
 | 4 | **03 · PESO** · Peso no pé de trás. Saiu de ré da onda. | Plano aberto da queda, carimbo torto coral "VACA DETECTADA". |
-| 5 | **NOTA 5,8** · _mas a intenção foi 10 🤙_ | 5 cartões de juiz, maior e menor riscadas, o 5,8 enorme em coral. |
-| 6 | **Linha ideal: +2 pontos** · Joelho dobrado, braço na frente, peso no pé da frente. | Duas imagens empilhadas: "O QUE ROLOU · 5,8" × "LINHA IDEAL · 7,8" (esqueleto corrigido sobre o fantasma tracejado). |
+| 5 | **NOTA 2,3** · _mas a intenção foi 10 🤙_ | 5 cartões de juiz, maior e menor riscadas, o 2,3 enorme em coral. |
+| 6 | **Linha ideal: +2 pontos** · Joelho dobrado, braço na frente, peso no pé da frente. | Duas imagens empilhadas: "O QUE ROLOU · 2,3" × "LINHA IDEAL · 4,3" (esqueleto corrigido sobre o fantasma tracejado). |
 | 7 | **Tamo construindo uma IA que lê teu surf.** · Manda teu vídeo: os 10 primeiros recebem a análise de graça. · **Comenta ANÁLISE 👇** | Tela papel com retícula, logo Surfzada, botão coral "Comenta ANÁLISE", etiqueta "EM DESENVOLVIMENTO". |
 
 ---
