@@ -1,0 +1,22 @@
+{
+  "arquivos": [
+    {
+      "origem": "pecas/2026-10-ia-analisa-rasgada/brutos/7450_Surfer_Surfing_1280x720.mp4",
+      "destino": "clipes/rasgada.mp4",
+      "converter": { "orientacao": "deitado", "hdr": false, "corte": [10, 20] },
+      "nota": "O brother: pôr do sol, rasgada aos 15 s do bruto e a queda aos 17 s (25 fps, 720p)"
+    },
+    {
+      "origem": "pecas/2026-10-ia-analisa-rasgada/brutos/7660373-uhd_3840_2160_25fps.mp4",
+      "destino": "clipes/vaca.mp4",
+      "converter": { "orientacao": "deitado", "hdr": false, "corte": [3, 10.6] },
+      "nota": "Surfista de roupa preta: cavada, batida e a vaca no fim (4K, 25 fps)"
+    },
+    {
+      "origem": "pecas/2026-10-ia-analisa-rasgada/brutos/7425528-uhd_3840_2160_30fps.mp4",
+      "destino": "clipes/espuma.mp4",
+      "converter": { "orientacao": "deitado", "hdr": false },
+      "nota": "Pico cheio, surfista na espuma e caldo no fim (4K, 30 fps)"
+    }
+  ]
+}
