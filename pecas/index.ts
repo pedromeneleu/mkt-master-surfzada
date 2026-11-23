@@ -15,6 +15,8 @@ import { Composicoes as p202610PrevisaoFimDeSemana } from './2026-10-previsao-fi
 import { Composicoes as p202610PrevisaoSemanaEleicao } from './2026-10-previsao-semana-eleicao/composicoes';
 import { Composicoes as p202610SaquaremaCinematico } from './2026-10-saquarema-cinematico/composicoes';
 import { Composicoes as p202610TributoAndy } from './2026-10-tributo-andy/composicoes';
+import { Composicoes as p202611WildcardJohnJohn } from './2026-11-wildcard-john-john/composicoes';
+import { Composicoes as p202611ExplicaEp03 } from './2026-11-explica-ep03/composicoes';
 // novo:imports
 
 export const PECAS: { slug: string; Composicoes: ComponentType }[] = [
@@ -28,5 +30,7 @@ export const PECAS: { slug: string; Composicoes: ComponentType }[] = [
   { slug: '2026-10-previsao-semana-eleicao', Composicoes: p202610PrevisaoSemanaEleicao },
   { slug: '2026-10-saquarema-cinematico', Composicoes: p202610SaquaremaCinematico },
   { slug: '2026-10-tributo-andy', Composicoes: p202610TributoAndy },
+  { slug: '2026-11-wildcard-john-john', Composicoes: p202611WildcardJohnJohn },
+  { slug: '2026-11-explica-ep03', Composicoes: p202611ExplicaEp03 },
   // novo:pecas
 ];
