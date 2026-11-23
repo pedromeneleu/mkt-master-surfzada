@@ -10,7 +10,22 @@ responsavel: null
 publicar_em: null
 publicado_em: null
 link: null
-renders: []
+renders:
+  - composicao: wildcard-john-john-story-contexto
+    arquivo: surfzada-wildcard-john-john-story-contexto-9x16.mp4
+  - composicao: wildcard-john-john-story-enquete
+    arquivo: surfzada-wildcard-john-john-story-enquete-9x16.png
+    frame: 149
+carrossel:
+  master: true
+  slides:
+    - composicao: wildcard-john-john-capa
+    - composicao: wildcard-john-john-pedido
+    - composicao: wildcard-john-john-quintal
+    - composicao: wildcard-john-john-chave
+    - composicao: wildcard-john-john-em-jogo
+    - composicao: wildcard-john-john-ultima-chance
+    - composicao: wildcard-john-john-chamada
 ---
 
 ## Briefing
@@ -50,12 +65,14 @@ John John: ele é ídolo e o mérito dele faz parte da história.
 
 **O que NÃO fazer:**
 
-- Nada de foto ou vídeo da WSL, do John John ou dos brasileiros (sem licença). A peça é
-  tipográfica + vetores da marca (onda, chave da bateria). O Andy pode aparecer.
 - Não inventar números: pontos no ranking e datas exatas do evento só entram se confirmados na
   fonte oficial (worldsurfleague.com).
 - Não impulsionar essas peças (direito de imagem e vida curta). O dinheiro de ads vai para a
   previsão de Pipeline na semana do evento.
+
+**Visual:** fundo tinta com o brilho coral, Poppins, palavra-chave em coral. As três fotos do John
+John (enviadas pelo Pedro em 23/11) entram em preto e branco com grão: são pequenas (≤ 738 px) e o
+tratamento esconde a ampliação e deixa as três com a mesma cara.
 
 ## Roteiro
 
@@ -117,12 +134,31 @@ dezembro: quem leva?"
 
 ## Créditos
 
-Nenhum material de terceiros: a peça é só tipografia e vetores da Surfzada. Fontes da notícia no
-Briefing.
+### Fotos do John John (Drive, fora do git)
+
+Enviadas pelo Pedro em 23/11/2026, a pedido dele, para usar na peça. **São de terceiros e o autor
+de cada uma ainda não foi identificado**: no slide o crédito está como "Foto: reprodução"
+(`fotos.ts`). Antes de publicar, achar a fonte e trocar pelo nome do fotógrafo/canal.
+
+| Arquivo (Drive `pecas/2026-11-wildcard-john-john/fotos/`) | O que é | Onde entra | Autor |
+|---|---|---|---|
+| `john-john-prancha-teahupoo.jpg` | De pé na laje com a prancha, montanhas atrás | Capa | a confirmar |
+| `john-john-estudio.jpg` | Sentado no estúdio, boné e camiseta Florence | Slides 2 e 4, story da enquete | a confirmar |
+| `john-john-praia.jpg` | Na praia, onda quebrando atrás (frame de vlog) | Slide 3, story de contexto, veredito | a confirmar |
+
+O resto é tipografia, vetores da Surfzada e o Andy. Fontes da notícia no Briefing.
 
 ## Notas de revisão
 
 - Confirmar antes de publicar: datas da janela de Pipeline 2026, se o título é decidido só entre
   Medina e Yago (ou se mais alguém tem chance matemática) e se a WSL já respondeu ao pedido.
+- Créditos das três fotos (ver acima) e subir as fotos para o Drive em
+  `pecas/2026-11-wildcard-john-john/fotos/` (o `assets.json` busca de lá).
 - Publicar o carrossel e os stories no mesmo dia, o quanto antes: depois da decisão da WSL a pauta
   vira o reel de veredito.
+- **Veredito**: as composições `wildcard-john-john-veredito-aceitou` e `-negou` estão prontas com
+  "XX%" listrado no lugar do número. Quando sair a decisão, trocar `porcentagemSim` em
+  `composicoes.tsx`, renderizar com `npm run render -- 2026-11-wildcard-john-john --so=<id>` e
+  colocar a versão certa em `renders:`.
+- 23/11: quadros revisados (carrossel, stories e veredito). Ajustes: contraste do rótulo da capa
+  sobre o céu, rótulo e marca do story da enquete sobre o coral, espaços vazios nos slides 2, 3, 5 e 6.

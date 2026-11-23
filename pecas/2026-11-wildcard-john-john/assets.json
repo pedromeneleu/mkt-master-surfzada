@@ -1,1 +1,9 @@
-{ "arquivos": [] }
+{
+  "arquivos": [
+    {
+      "origem": "pecas/2026-11-wildcard-john-john/fotos/*.jpg",
+      "destino": "fotos/",
+      "nota": "Fotos do John John Florence enviadas pelo Pedro, com direitos de terceiros: não vão para o git. Créditos em fotos.ts e no post.md"
+    }
+  ]
+}

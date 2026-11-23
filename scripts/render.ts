@@ -55,7 +55,8 @@ for (const r of renders) {
       scale: escala,
       output: destino,
       imageFormat: ext === 'png' ? 'png' : 'jpeg',
-      jpegQuality: 92,
+      // O Remotion recusa `jpegQuality` em PNG.
+      jpegQuality: ext === 'png' ? undefined : 92,
     });
   } else {
     let ultimo = -1;
